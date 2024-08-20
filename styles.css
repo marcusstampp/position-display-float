@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent-container {
+    
+    position: relative;
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vw;
+    padding: 5px;
+}
+
+.child {
+    padding: 25px;
+}
+
+/* 
+
+    Static
+
+*/
+
+.child1 {
+    position: static;
+    border: 2px solid red;
+    background-color: red;
+}
+
+/* 
+
+    Relative
+
+can be changed using top, bottom, left, right
+values are relative to its original
+*/
+.child2 {
+
+    top: 15px;
+    left: 25px;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+}
+
+/* 
+
+Absolute
+
+Removes element from the flow
+Positions it relative to the parent container
+If parent is static it will move out the parent container
+
+
+*/
+
+.child3 {
+
+    
+    top: 0px;
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+
+.child4 {
+
+    position: fixed;
+    border: 2px solid teal;
+    background-color: teal;
+}
+
+.child5 {
+    border: 2px solid gray;
+    background-color: gray;
+}
+.display-container {
+
+    margin-top: 2em;
+}
+
+.block-container {
+
+    border: 2px solid black;
+    margin: 5px;
+
+}
+
+.inline {
+
+    display: block;
+}
